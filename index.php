@@ -20,4 +20,10 @@ $f3->route('GET /', function() {
     echo $view->render('views/home.html');
 });
 
+//Define a breakfast rout
+$f3->route('GET /breakfast', function() {
+    $view = new Template();
+    echo $view->render('views/breakfast.html');
+});
+
 $f3->run();
